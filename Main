@@ -57,6 +57,6 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Other and about",
 	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/AboutAndCookie'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/About'))()
   	end    
 })
