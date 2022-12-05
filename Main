@@ -55,3 +55,9 @@ Tab:AddButton({
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/About'))()
   	end    
 })
+Tab:AddButton({
+	Name = "List of updates",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/About'))()
+  	end    
+})
