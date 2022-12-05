@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Bios", HidePremium = true, SaveConfig = true, ConfigFolder = "BUNBASTER"})
 local Tab = Window:MakeTab({
-	Name = "About and more",
+	Name = "Bios",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -12,7 +12,11 @@ Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Main')))()
 end    
 })
-
+local Tab = Window:MakeTab({
+	Name = "About",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 Tab:AddButton({
 Name = "This script was created on 04.12.2022",
 Callback = function()
