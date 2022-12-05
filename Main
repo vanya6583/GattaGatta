@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Bios", HidePremium = true, SaveConfig = true, ConfigFolder = "Banana"})
+local Window = OrionLib:MakeWindow({Name = "Bios 0.2", HidePremium = true, SaveConfig = true, ConfigFolder = "Banana"})
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
@@ -25,7 +25,7 @@ Name = "Combat",
  Callback = function()
 	OrionLib:MakeNotification({
 	Name = "Need Ver0.5!",
-	Content = "But u can use teleport.",
+	Content = "But u can use another page.",
 	Image = "rbxassetid://4483345998",
 	Time = 12
 	})
@@ -37,7 +37,7 @@ Tab:AddButton({
 	Callback = function()
         OrionLib:MakeNotification({
 	Name = "Need Ver0.9",
-	Content = "But u can use teleport.",
+	Content = "But u can use another page.",
 	Image = "rbxassetid://4483345998",
 	Time = 12
 	})
@@ -58,6 +58,13 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "List of updates",
 	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/About'))()
+		OrionLib:MakeNotification({
+	Name = "Need Ver0.3!",
+	Content = "But u can use another page.",
+	Image = "rbxassetid://4483345998",
+	Time = 12
+	})
+  	end    
+})
   	end    
 })
