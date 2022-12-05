@@ -1,0 +1,65 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Main", HidePremium = true, SaveConfig = true, ConfigFolder = "BUNBASTER"})
+local Tab = Window:MakeTab({
+	Name = "Bios",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Back to Bios",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Main')))()
+end    
+})
+local Tab = Window:MakeTab({
+	Name = "Charecter",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddLabel("Speed Power")
+Tab:AddSlider({
+    Name = "Speed",
+    Min = 16,
+    Max = 100,
+    Default = 16,
+    Color = Color3.fromRGB(255,255,255),
+    Increment = 1,
+    ValueName = "Speed",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end    
+})
+Tab:AddLabel("Jump Power")
+Tab:AddSlider({
+    Name = "Jump",
+    Min = 50,
+    Max = 200,
+    Default = 50,
+    Color = Color3.fromRGB(255,255,255),
+    Increment = 1,
+    ValueName = "Jump",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end    
+})
+Tab:AddLabel("Infinity Jump and ")
+Tab:AddToggle({
+    Name = "Jump in air",
+    Default = false,
+    Callback = function(Value)
+        _G.infinjump = Value
+ 
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+Mouse.KeyDown:connect(function(k)
+if _G.infinjump then
+if k:byte() == 32 then
+Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+Humanoid:ChangeState("Jumping")
+wait(0.1)
+Humanoid:ChangeState("Seated")
+end
+end
+end)
+    end    
+})
