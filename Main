@@ -51,7 +51,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Teleport",
 	Callback = function()
-        loadstring(game:HttpGet('https://github.com/vanya6583/GattaGatta/edit/main/Teleport'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Teleport'))()
   	end    
 })
 Tab:AddButton({
