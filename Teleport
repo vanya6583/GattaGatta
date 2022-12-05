@@ -21,25 +21,25 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 Name = "Blue Up",
 Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6.754860877990723, 23.600034713745117, 127.21406555175781)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.7494234442710876, 129.19985961914062, 100.97635650634766)
 end    
 })
 Tab:AddButton({
 Name = "Red Up",
 Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-132.31507873535156, 23.60004425048828, -0.44465380907058716)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-101.571044921875, 129.1998748779297, 0.02412746287882328)
 end    
 })
 Tab:AddButton({
 Name = "Green Up",
 Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1.4617762565612793, 23.600013732910156, -127.0892333984375)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2.059662342071533, 129.19985961914062, -101.22891998291016)
 end    
 })
 Tab:AddButton({
 Name = "Yellow Up",
 Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(131.30059814453125, 23.600013732910156, 5.165349006652832)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.623291015625, 129.1998748779297, 0.20939277112483978)
 end
 })
 local Tab = Window:MakeTab({
