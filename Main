@@ -51,12 +51,12 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Teleport",
 	Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/BiosTeleportGui/main/Teleport?token=GHSAT0AAAAAAB3RJPYKZ42PH42OSRSKGQMUY4NS75A'))()
+        loadstring(game:HttpGet('https://github.com/vanya6583/GattaGatta/edit/main/Teleport'))()
   	end    
 })
 Tab:AddButton({
 	Name = "Other and about",
 	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/BiosTeleportGui/main/Other%20and%20about?token=GHSAT0AAAAAAB3RJPYLQVVRZEJU7NICA25QY4NSKTA'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/AboutAndCookie'))()
   	end    
 })
