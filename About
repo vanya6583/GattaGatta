@@ -32,38 +32,27 @@ end
 Tab:AddButton({
 Name = "The script was developed by BUNBASTER12BLASTER",
 Callback = function()
-
-end    
+local Tab = Window:MakeTab({
+	Name = "Firsts Version's",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 Tab:AddButton({
-Name = "I'm not a gang, but I'm not a player either.",
+Name = "About Planes",
 Callback = function()
 
 end    
 })
-Tab:AddButton({
-Name = "I made it for fun then maybe",
-Callback = function()
-
-end    
+local Tab = Window:MakeTab({
+	Name = "About Planes",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
-Tab:AddButton({
-Name = "I will make a premium later and I will receive money",
-Callback = function()
 
-end    
-})
-Tab:AddButton({
-Name = "I am self-taught",
-Callback = function()
-
-end    
-})
-Tab:AddButton({
-Name = "FF2AAQ12ERANewFuture3Dd25VQ4RGWW",
-Callback = function()
-
-end    
+local Tab = Window:MakeTab({
+	Name = "Premium Version",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = true
 })
 
 
