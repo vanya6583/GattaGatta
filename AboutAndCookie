@@ -1,0 +1,105 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Teleport", HidePremium = true, SaveConfig = true, ConfigFolder = "BUNBASTER"})
+local Tab = Window:MakeTab({
+	Name = "Bios",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Back to Bios",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/vanya6583/BiosTeleportGui/main/Bios?token=GHSAT0AAAAAAB3RJPYKMS4WL5UY5MTRYGOKY4NRYYA')))()
+end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Up",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Blue Up",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6.754860877990723, 23.600034713745117, 127.21406555175781)
+end    
+})
+Tab:AddButton({
+Name = "Red Up",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-132.31507873535156, 23.60004425048828, -0.44465380907058716)
+end    
+})
+Tab:AddButton({
+Name = "Green Up",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1.4617762565612793, 23.600013732910156, -127.0892333984375)
+end    
+})
+Tab:AddButton({
+Name = "Yellow Up",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(131.30059814453125, 23.600013732910156, 5.165349006652832)
+end
+})
+local Tab = Window:MakeTab({
+	Name = "Down",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false   
+})
+
+Tab:AddButton({
+Name = "Blue Down",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6.754860877990723, 23.600034713745117, 127.21406555175781)
+end    
+})
+
+Tab:AddButton({
+Name = "Red Down",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-132.31507873535156, 23.60004425048828, -0.44465380907058716)
+end    
+})
+
+Tab:AddButton({
+Name = "Green Down",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1.4617762565612793, 23.600013732910156, -127.0892333984375)
+end    
+})
+
+Tab:AddButton({
+Name = "Yellow down",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(131.30059814453125, 23.600013732910156, 5.165349006652832)
+end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Other",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Middle of the Bridge",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.4194936156272888, 131.39996337890625, -0.034309759736061096)
+end    
+})
+Tab:AddButton({
+Name = "Spectator's",
+Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-14.594708442687988, 326.5445861816406, 1.3450276851654053)
+end    
+})
+Tab:AddTextbox({
+	Name = "Teleport to player",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(txt)
+		   local ooooooof = txt
+                   local plr1 = game.Players.LocalPlayer.Character
+                   plr1.HumanoidRootPart.CFrame = plr2.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
+	end	  
+})
