@@ -17,12 +17,7 @@ OrionLib:MakeNotification({
 Tab:AddButton({
 Name = "Main",
 Callback = function()
-        OrionLib:MakeNotification({
-        Name = "need Ver0.2!",
-        Content = "But u can use teleport.",
-        Image = "rbxassetid://4483345998",
-	Time = 12
-	})
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Charecter'))()
   	end    
 })
 Tab:AddButton({
