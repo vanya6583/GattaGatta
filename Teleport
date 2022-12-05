@@ -9,7 +9,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 Name = "Back to Bios",
 Callback = function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/vanya6583/BiosTeleportGui/main/Bios?token=GHSAT0AAAAAAB3RJPYKMS4WL5UY5MTRYGOKY4NRYYA')))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Main')))()
 end    
 })
 
