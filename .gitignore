@@ -1,41 +1,63 @@
-# Compiled Lua sources
-luac.out
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+local Window = OrionLib:MakeWindow({Name = "Bios", HidePremium = true, SaveConfig = true, ConfigFolder = "Banana"})
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+OrionLib:MakeNotification({
+	Name = "Welcome! Ver0.1",
+	Content = "By BUNBASTER12BLASTER!",
+	Image = "rbxassetid://4483345998",
+	Time = 12
+})
 
-# Precompiled Headers
-*.gch
-*.pch
+Tab:AddButton({
+Name = "Main",
+Callback = function()
+        OrionLib:MakeNotification({
+        Name = "need Ver0.2!",
+        Content = "But u can use teleport.",
+        Image = "rbxassetid://4483345998",
+	Time = 12
+	})
+  	end    
+})
+Tab:AddButton({
+Name = "Combat",
+ Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Need Ver0.5!",
+	Content = "But u can use teleport.",
+	Image = "rbxassetid://4483345998",
+	Time = 12
+	})
+  	end    
+})
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+Tab:AddButton({
+	Name = "Premium",
+	Callback = function()
+        OrionLib:MakeNotification({
+	Name = "Need Ver0.9",
+	Content = "But u can use teleport.",
+	Image = "rbxassetid://4483345998",
+	Time = 12
+	})
+  	end    
+})
+Tab:AddButton({
+	Name = "Teleport",
+	Callback = function()
+	OrionLib:Destroy()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/BiosTeleportGui/main/Teleport?token=GHSAT0AAAAAAB3RJPYKZ42PH42OSRSKGQMUY4NS75A'))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Other and about",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/BiosTeleportGui/main/Other%20and%20about?token=GHSAT0AAAAAAB3RJPYLQVVRZEJU7NICA25QY4NSKTA'))()
+  	end    
+})
