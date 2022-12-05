@@ -8,7 +8,7 @@ local Tab = Window:MakeTab({
 })
 
 OrionLib:MakeNotification({
-	Name = "Welcome! Ver0.1",
+	Name = "Welcome! Ver0.2 About in About:D",
 	Content = "By BUNBASTER12BLASTER!",
 	Image = "rbxassetid://4483345998",
 	Time = 12
