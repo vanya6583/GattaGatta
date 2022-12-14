@@ -23,12 +23,7 @@ Callback = function()
 Tab:AddButton({
 Name = "Combat",
  Callback = function()
-	OrionLib:MakeNotification({
-	Name = "Need Ver0.5!",
-	Content = "But u can use another page.",
-	Image = "rbxassetid://4483345998",
-	Time = 12
-	})
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Combat'))()
   	end    
 })
 
@@ -36,7 +31,7 @@ Tab:AddButton({
 	Name = "Premium",
 	Callback = function()
         OrionLib:MakeNotification({
-	Name = "Need Ver0.9",
+	Name = "U not have Premium!!!",
 	Content = "But u can use another page.",
 	Image = "rbxassetid://4483345998",
 	Time = 12
