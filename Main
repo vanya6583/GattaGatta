@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Bios 0.2", HidePremium = true, SaveConfig = true, ConfigFolder = "Banana"})
+local Window = OrionLib:MakeWindow({Name = "Bios 0.2", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "Banana"})
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
@@ -8,7 +8,7 @@ local Tab = Window:MakeTab({
 })
 
 OrionLib:MakeNotification({
-	Name = "Welcome! Ver0.2 About in About:D",
+	Name = "Hello, im sure you too exploiter!",
 	Content = "By BUNBASTER12BLASTER!",
 	Image = "rbxassetid://4483345998",
 	Time = 12
