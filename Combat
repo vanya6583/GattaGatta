@@ -1,13 +1,13 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Bios 0.2", HidePremium = true, SaveConfig = true, ConfigFolder = "Banana"})
+local Window = OrionLib:MakeWindow({Name = "Bios 0.2", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "Banana"})
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 Tab:AddButton({
-Name = "Main",
+Name = "Esp",
 Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua'))()
   	end    
