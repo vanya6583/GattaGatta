@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Bios", HidePremium = true, SaveConfig = true, ConfigFolder = "BUNBASTER"})
+local Window = OrionLib:MakeWindow({Name = "Bios", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "BUNBASTER"})
 local Tab = Window:MakeTab({
 	Name = "Bios",
 	Icon = "rbxassetid://4483345998",
