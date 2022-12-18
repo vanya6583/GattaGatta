@@ -17,6 +17,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddLabel("Speed Power")
+
 Tab:AddSlider({
     Name = "Speed",
     Min = 16,
