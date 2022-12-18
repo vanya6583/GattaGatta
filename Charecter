@@ -20,29 +20,31 @@ Tab:AddLabel("Speed Power")
 Tab:AddSlider({
     Name = "Speed",
     Min = 16,
-    Max = 200,
+    Max = 150,
     Default = 16,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
     ValueName = "Speed",
-    Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    Callback = function(Speedp)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Speedp
     end    
 })
 Tab:AddLabel("Jump Power")
 Tab:AddSlider({
     Name = "Jump",
     Min = 50,
-    Max = 300,
+    Max = 200,
     Default = 50,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
     ValueName = "Jump",
-    Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    Callback = function(Jumpp)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Jumpp
     end    
 })
+
 Tab:AddLabel("Infinity Jump")
+
 Tab:AddToggle({
     Name = "Jump in air",
     Default = false,
@@ -63,15 +65,7 @@ end
 end)
     end    
 })
-Tab:AddLabel("Fly")
-Tab:AddToggle({
-	Name = "Fly Player",
-	Default = false,
-	Callback = function(Value)
-		
 
-	end    
-})
 local Tab = Window:MakeTab({
 	Name = "Teleport To Player",
 	Icon = "rbxassetid://4483345998",
