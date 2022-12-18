@@ -80,3 +80,31 @@ end)
 
   	end    
 })
+Tab:AddButton({
+	Name = "Bomb NOT WORKING",
+	Callback = function()
+      		      		game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == "^goto " then
+    local player
+    for i, plr in ipairs(game.Players:GetPlayers()) do
+    if string.lower(plr.Name):sub(1, string.len(msg:sub(7))) == string.lower(msg:sub(7)) then
+        player = plr.Name
+    end
+    end
+	    local pls = game.Players.LocalPlayer
+		local olee = pls.Character.HumanoidRootPart.CFrame
+	        for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Bomb" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+		wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
+		wait(0.1)
+		local vu = game:GetService("VirtualUser")
+        vu:ClickButton1(Vector2.new(500,0), game.Workspace.CurrentCamera.CFrame)
+		wait(0.1)
+        plr.Character.HumanoidRootPart.CFrame = old
+end
+end)
+  	end    
+})
