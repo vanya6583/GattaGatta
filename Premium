@@ -18,8 +18,9 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Tab:AddLabel("Prefix ^")
 Tab:AddButton({
-	Name = "Button!",
+	Name = "Goto command",
 	Callback = function()
       		game.Players.LocalPlayer.Chatted:connect(function(msg)
 if msg:sub(1, 6) == "^goto " then
@@ -36,7 +37,7 @@ end)
 })
 
 Tab:AddButton({
-	Name = "Button!",
+	Name = "Kill command",
 	Callback = function()
       		game.Players.LocalPlayer.Chatted:connect(function(msg)
 if msg:sub(1, 6) == "^kill " then
