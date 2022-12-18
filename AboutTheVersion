@@ -1,1 +1,310 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
+local Window = OrionLib:MakeWindow({Name = "Bios", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "BUNBASTER"})
+local Tab = Window:MakeTab({
+	Name = "Bios",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Back to Bios",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Main')))()
+end    
+})
+local Tab = Window:MakeTab({
+	Name = "V0.1",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Added Main",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "Added Teleport",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "Update Main",
+Callback = function()
+
+end
+Tab:AddButton({
+Name = "Rename Main",
+Callback = function()
+
+end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "V0.2",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Updated Teleport",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "Updated Main",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "Added Charecter",
+Callback = function()
+
+end
+Tab:AddButton({
+Name = "Update Charecter",
+Callback = function()
+
+end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "V0.3",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Added Combat",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "Added Function's to teleport",
+Callback = function()
+
+end    
+
+local Tab = Window:MakeTab({
+	Name = "V0.4",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Added PPDE",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "Updated BIOS",
+Callback = function()
+
+end    
+
+local Tab = Window:MakeTab({
+	Name = "V0.5",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "Added AboutTheVersion's",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+local Tab = Window:MakeTab({
+	Name = "V0.6",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+local Tab = Window:MakeTab({
+	Name = "V0.7",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+local Tab = Window:MakeTab({
+	Name = "V0.8",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+local Tab = Window:MakeTab({
+	Name = "V0.9",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+local Tab = Window:MakeTab({
+	Name = "V1.0",
+	Icon = "11104586890",
+	PremiumOnly = false
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
+Tab:AddButton({
+Name = "",
+Callback = function()
+
+end    
+})
