@@ -39,7 +39,7 @@ end)
 Tab:AddButton({
 	Name = "Kill command",
 	Callback = function()
-      		game.Players.LocalPlayer.Chatted:connect(function(msg)
+game.Players.LocalPlayer.Chatted:connect(function(msg)
 if msg:sub(1, 6) == "^kill " then
     local player
     for i, plr in ipairs(game.Players:GetPlayers()) do
@@ -51,6 +51,18 @@ if msg:sub(1, 6) == "^kill " then
         if v.name == "Sword" then
             v.Parent = game.Players.LocalPlayer.Character
         end
+    wait(0.01)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
+    wait(0.01)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
+    wait(0.01)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
+    wait(0.01)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
+    wait(0.01)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
+    wait(0.1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
     wait(0.1)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
     wait(0.1)
