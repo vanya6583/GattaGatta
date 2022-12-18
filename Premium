@@ -2,9 +2,9 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Premium", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "BUNBASTER"})
 local Tab = Window:MakeTab({
-	Name = "Bios",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Bios",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 Tab:AddButton({
 Name = "Back to Bios",
@@ -14,15 +14,15 @@ end
 })
 
 local Tab = Window:MakeTab({
-	Name = "Chat Commands",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Chat Commands",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 Tab:AddLabel("Prefix ^")
 Tab:AddButton({
-	Name = "Goto command",
-	Callback = function()
-      		game.Players.LocalPlayer.Chatted:connect(function(msg)
+    Name = "Goto command",
+    Callback = function()
+            game.Players.LocalPlayer.Chatted:connect(function(msg)
 if msg:sub(1, 6) == "^goto " then
     local player
     for i, plr in ipairs(game.Players:GetPlayers()) do
@@ -33,15 +33,12 @@ if msg:sub(1, 6) == "^goto " then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
 end
 end)
-  	end    
+    end    
 })
 
 Tab:AddButton({
-	Name = "Kill command",
-	Callback = function()
-	local ple = game.Players.LocalPlayer
-	local old = ple.Character.HumanoidRootPart.CFrame
-	wait(0.2)
+    Name = "Kill command",
+    Callback = function()
 game.Players.LocalPlayer.Chatted:connect(function(msg)
 if msg:sub(1, 6) == "^kill " then
     local player
@@ -50,9 +47,9 @@ if msg:sub(1, 6) == "^kill " then
         player = plr.Name
     end
     end
-    local plr = game.Players.LocalPlayer
-local old = plr.Character.HumanoidRootPart.CFrame
-wait(0.1)
+        local ple = game.Players.LocalPlayer
+    local olda = ple.Character.HumanoidRootPart.CFrame
+    wait(0.2)
         for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
         if v.name == "Sword" then
             v.Parent = game.Players.LocalPlayer.Character
@@ -76,45 +73,18 @@ wait(0.1)
     wait(0.1)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
     wait(0.1)
-    plr.Character.HumanoidRootPart.CFrame = old
+    plr.Character.HumanoidRootPart.CFrame = olda
     end
 end
 end)
 
-  	end    
-})
-Tab:AddButton({
-	Name = "bomb NOT WORKING",
-	Callback = function()
-      		      		game.Players.LocalPlayer.Chatted:connect(function(msg)
-if msg:sub(1, 6) == "^bomb " then
-    local player
-    for i, plr in ipairs(game.Players:GetPlayers()) do
-    if string.lower(plr.Name):sub(1, string.len(msg:sub(7))) == string.lower(msg:sub(7)) then
-        player = plr.Name
-    end
-    end
-	    local pls = game.Players.LocalPlayer
-		local olee = pls.Character.HumanoidRootPart.CFrame
-	        for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-        if v.name == "Bomb" then
-            v.Parent = game.Players.LocalPlayer.Character
-        end
-		wait(0.1)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
-		wait(0.1)
-		local vu = game:GetService("VirtualUser")
-        vu:ClickButton1(Vector2.new(500,0), game.Workspace.CurrentCamera.CFrame)
-		wait(0.1)
-        plr.Character.HumanoidRootPart.CFrame = old
-end
-  	end    
+    end    
 })
 
 Tab:AddButton({
-	Name = "view command",
-	Callback = function()
-      		game.Players.LocalPlayer.Chatted:connect(function(msg)
+    Name = "view command",
+    Callback = function()
+            game.Players.LocalPlayer.Chatted:connect(function(msg)
 if msg:sub(1, 6) == "^view " then
     local player
     for i, plr in ipairs(game.Players:GetPlayers()) do
@@ -129,12 +99,12 @@ game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Play
 end
 end
 end)
-  	end    
+    end    
 })
 Tab:AddButton({
-	Name = "Unview command",
-	Callback = function()
-      		game.Players.LocalPlayer.Chatted:connect(function(msg)
+    Name = "Unview command",
+    Callback = function()
+            game.Players.LocalPlayer.Chatted:connect(function(msg)
 if msg:sub(1, 6) == "^unview " then
     local player
     for i, plr in ipairs(game.Players:GetPlayers()) do
@@ -145,5 +115,5 @@ if msg:sub(1, 6) == "^unview " then
 game:GetService("Workspace").CurrentCamera.CameraSubject = player.Character.Humanoid
 end
 end)
-  	end    
+    end    
 })
