@@ -105,7 +105,6 @@ if msg:sub(1, 6) == "^bomb " then
 		wait(0.1)
         plr.Character.HumanoidRootPart.CFrame = old
 end
-end)
   	end    
 })
 game:GetService("Workspace").CurrentCamera.CameraSubject = Player.Character.Head
