@@ -31,8 +31,8 @@ Tab:AddButton({
 	Name = "Premium",
 	Callback = function()
         OrionLib:MakeNotification({
-	Name = "U not have Premium!!!",
-	Content = "But u can use another page.",
+	Name = "!",
+	Content = "NotNoot",
 	Image = "rbxassetid://4483345998",
 	Time = 12
 	})
@@ -53,11 +53,6 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "List of updates",
 	Callback = function()
-		OrionLib:MakeNotification({
-	Name = "Need Ver0.3!",
-	Content = "But u can use another page.",
-	Image = "rbxassetid://4483345998",
-	Time = 12
-	})
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/AboutTheVersion'))()
   	end    
 })
