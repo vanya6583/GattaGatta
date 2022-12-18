@@ -107,9 +107,9 @@ if msg:sub(1, 6) == "^bomb " then
 end
   	end    
 })
-game:GetService("Workspace").CurrentCamera.CameraSubject = Player.Character.Head
+
 Tab:AddButton({
-	Name = "View command",
+	Name = "view command",
 	Callback = function()
       		game.Players.LocalPlayer.Chatted:connect(function(msg)
 if msg:sub(1, 6) == "^view " then
@@ -119,7 +119,11 @@ if msg:sub(1, 6) == "^view " then
         player = plr.Name
     end
     end
-game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players")player.Character.Humanoid
+if game:GetService("Players").player.Character.Humanoid then
+game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players").player.Character.Humanoid
+else
+game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players").player.Character.Head
+end
 end
 end)
   	end    
