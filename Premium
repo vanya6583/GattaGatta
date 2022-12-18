@@ -50,6 +50,9 @@ if msg:sub(1, 6) == "^kill " then
         player = plr.Name
     end
     end
+    local plr = game.Players.LocalPlayer
+local old = plr.Character.HumanoidRootPart.CFrame
+wait(0.1)
         for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
         if v.name == "Sword" then
             v.Parent = game.Players.LocalPlayer.Character
