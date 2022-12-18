@@ -32,27 +32,17 @@ end
 Tab:AddButton({
 Name = "The script was developed by BUNBASTER12BLASTER",
 Callback = function()
-local Tab = Window:MakeTab({
-	Name = "Firsts Version's",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+
+end
 Tab:AddButton({
-Name = "About Planes",
+Name = "Last update 18.12.2022",
 Callback = function()
 
 end    
 })
-local Tab = Window:MakeTab({
-	Name = "About Planes",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+Tab:AddButton({
+Name = "Version now 0.8",
+Callback = function()
+
+end    
 })
-
-local Tab = Window:MakeTab({
-	Name = "Premium Version",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = true
-})
-
-
