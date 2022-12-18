@@ -20,7 +20,7 @@ Tab:AddLabel("Speed Power")
 Tab:AddSlider({
     Name = "Speed",
     Min = 16,
-    Max = 100,
+    Max = 200,
     Default = 16,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
@@ -33,7 +33,7 @@ Tab:AddLabel("Jump Power")
 Tab:AddSlider({
     Name = "Jump",
     Min = 50,
-    Max = 200,
+    Max = 300,
     Default = 50,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
@@ -65,11 +65,11 @@ end)
 })
 Tab:AddLabel("Fly")
 Tab:AddToggle({
-	Name = "Fly",
+	Name = "Fly Player",
 	Default = false,
-	Callback = function(Yeas)
+	Callback = function(Value)
 		
-_G.enabled = Yeas
+_G.enabled = true
 if _G.enabled == true then
 repeat wait() 
     until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
