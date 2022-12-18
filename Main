@@ -1,25 +1,18 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Bios 0.2", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "Banana"})
+local Window = OrionLib:MakeWindow({Name = "Bios 0.8", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "Bein"})
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-OrionLib:MakeNotification({
-	Name = "Hello, im sure you too exploiter!",
-	Content = "By BUNBASTER12BLASTER!",
-	Image = "rbxassetid://4483345998",
-	Time = 12
-})
-
 Tab:AddButton({
 Name = "Main",
 Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Charecter'))()
   	end    
 })
+
 Tab:AddButton({
 Name = "Combat",
  Callback = function()
@@ -30,21 +23,17 @@ Name = "Combat",
 Tab:AddButton({
 	Name = "Premium",
 	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Premium'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Premium'))()
 
 })
+
 Tab:AddButton({
 	Name = "Teleport",
 	Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Teleport'))()
   	end    
 })
-Tab:AddButton({
-	Name = "Other and about",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/About'))()
-  	end    
-})
+
 Tab:AddButton({
 	Name = "List of updates",
 	Callback = function()
