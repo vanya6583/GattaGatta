@@ -30,12 +30,15 @@ Name = "Combat",
 Tab:AddButton({
 	Name = "Premium",
 	Callback = function()
-        OrionLib:MakeNotification({
-	Name = "!",
-	Content = "NotNoot",
+if game.Players.LocalPlayer.UserId = "owner id here" then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Premium'))()
+else
+OrionLib:MakeNotification({
+	Name = "LOOL",
+	Content = "By BUNBASTER12BLASTER!",
 	Image = "rbxassetid://4483345998",
 	Time = 12
-	})
+})
   	end    
 })
 Tab:AddButton({
