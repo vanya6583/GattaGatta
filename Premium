@@ -120,7 +120,7 @@ if msg:sub(1, 6) == "^view " then
         player = plr.Name
     end
     end
-game:GetService("Workspace").CurrentCamera.CameraSubject = player.Character.Head
+game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players")player.Character.Humanoid
 end
 end)
   	end    
