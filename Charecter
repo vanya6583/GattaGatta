@@ -69,8 +69,6 @@ Tab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		_G.enabled = Value
-while true do
-wait (0.01)
 if _G.enabled == true then
  repeat wait()
    until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
