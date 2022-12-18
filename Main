@@ -30,7 +30,7 @@ Name = "Combat",
 Tab:AddButton({
 	Name = "Premium",
 	Callback = function()
-if game.Players.LocalPlayer.UserId = "owner id here" then
+if game.Players.LocalPlayer.UserId = 3482821105 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Premium'))()
 else
 OrionLib:MakeNotification({
