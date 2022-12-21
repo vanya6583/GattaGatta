@@ -11,6 +11,7 @@ Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/vanya6583/GattaGatta/main/Main')))()
 end    
 })
+Tab:AddLabel("Ver:8.2 - 21.12.2022")
 local Tab = Window:MakeTab({
 	Name = "Charecter",
 	Icon = "rbxassetid://4483345998",
