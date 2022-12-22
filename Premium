@@ -2,9 +2,15 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Premium", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "BUNBASTER"})
 local Tab = Window:MakeTab({
-    Name = "Bios",
+    Name = "21.12.2022",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+Tab:AddLabel("21.12.2022 - Deleted - 21.12.2022")
+local Tab = Window:MakeTab({
+    Name = "Bios",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = true
 })
 Tab:AddButton({
 Name = "Back to Bios",
