@@ -12,7 +12,7 @@ local data = {
    ["embeds"] = {
        {
            ["title"] = "**Someone Executed Your Script!**",
-           ["description"] = "Имя Пользывателя: " .. game.Players.LocalPlayer.Name.." С Читом **"..webhookcheck.."** Айди игрока: ".. "".. game.Players.LocalPlayer.UserId.."",
+           ["description"] = "Имя Пользывателя: " .. game.Players.LocalPlayer.Name.." Возвраст Аккаунта "..game.Players.LocalPlayer.AccountAge.." С Читом **"..webhookcheck.."** Айди игрока: ".. "".. game.Players.LocalPlayer.UserId.."",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
