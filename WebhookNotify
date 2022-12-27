@@ -8,10 +8,10 @@ local webhookcheck =
 local url =
    "https://discordapp.com/api/webhooks/1051157428315623474/EQSg6YAWo3JjzbUr-4J9X9uWcpC2LdBnRcfSDll58Knj5sfbLBrt17pVQErNc-p5IByQ"
 local data = {
-   ["content"] = " Кто-то использует ваш BIOS ",
+   ["content"] = " Следопыт заметил что ваш скрипт используеться ",
    ["embeds"] = {
        {
-           ["title"] = "**Someone Executed Your Script!**",
+           ["title"] = "**Чебупель использует скрипт, вы можете его забанить**",
            ["description"] = "Имя Пользывателя: " .. game.Players.LocalPlayer.Name.." Возвраст Аккаунта "..game.Players.LocalPlayer.AccountAge.." С Читом **"..webhookcheck.."** Айди игрока: ".. "".. game.Players.LocalPlayer.UserId.."",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
