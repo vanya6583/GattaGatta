@@ -8,7 +8,7 @@ local webhookcheck =
 local url =
    "https://discordapp.com/api/webhooks/1051157428315623474/EQSg6YAWo3JjzbUr-4J9X9uWcpC2LdBnRcfSDll58Knj5sfbLBrt17pVQErNc-p5IByQ"
 local data = {
-   ["content"] = " Следопыт заметил что ваш скрипт используеться ",
+   ["content"] = " Крч, во че узнал (Про експлоит инфа не 100%) ",
    ["embeds"] = {
        {
            ["title"] = "**Чебупель использует скрипт, вы можете его забанить**",
